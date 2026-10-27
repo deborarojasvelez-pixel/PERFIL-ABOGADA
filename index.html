@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Carmen Rojas</title>
+    
+    <!-- Carga de Tailwind CSS para un diseño limpio y rápido sin complicaciones -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fuentes tipográficas sencillas y legibles de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Configuración personalizada de los colores rosa -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rosa-suave': '#FFF5F7',      /* Fondo principal */
+                        'rosa-tarjeta': '#FFFFFF',    /* Fondo de bloques */
+                        'rosa-borde': '#FBCFE8',      /* Líneas y bordes */
+                        'rosa-principal': '#DB2777',  /* Botones e iconos */
+                        'rosa-oscuro': '#831843',     /* Títulos principales */
+                        'rosa-texto': '#9D174D',      /* Subtítulos */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-rosa-suave text-gray-700 font-sans leading-relaxed min-h-screen py-8 px-4 sm:px-6">
+
+    <!-- CONTENEDOR PRINCIPAL: Centrado con ancho máximo legible -->
+    <div class="max-w-4xl mx-auto space-y-6">
+
+        <!-- ========================================== -->
+        <!-- 1. ENCABEZADO Y CONTACTO                  -->
+        <!-- ========================================== -->
+        <header class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <!-- Nombre y Titular -->
+                <h1 class="text-2xl sm:text-3xl font-bold text-rosa-oscuro">
+                    Carmen Debora Rita Rojas Vélez
+                </h1>
+                <p class="text-lg font-semibold text-rosa-principal mt-1">
+                    Estudiante de Derecho
+                </p>
+                <p class="text-sm text-gray-500 mt-1">
+                    📍 Lima, Perú
+                </p>
+            </div>
+
+            <!-- Datos de Contacto Directos -->
+            <div class="bg-rosa-suave p-4 rounded-xl border border-rosa-borde text-xs sm:text-sm space-y-2 w-full sm:w-auto">
+                <p class="flex items-center gap-2">
+                    <span class="font-bold text-rosa-texto">✉️ Correo:</span> 
+                    <a href="mailto:deborarojasvelez@gmail.com" class="hover:underline text-gray-800">deborarojasvelez@gmail.com</a>
+                </p>
+                <p class="flex items-center gap-2">
+                    <span class="font-bold text-rosa-texto">📞 Teléfono:</span> 
+                    <a href="tel:932467753" class="hover:underline text-gray-800">932 467 753</a>
+                </p>
+            </div>
+        </header>
+
+
+        <!-- ========================================== -->
+        <!-- 2. SOBRE MÍ                                -->
+        <!-- ========================================== -->
+        <section class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde">
+            <h2 class="text-xl font-bold text-rosa-oscuro mb-3 border-b-2 border-rosa-borde pb-2">
+                🌸 Sobre Mí
+            </h2>
+            <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                Estudiante de Derecho de décimo ciclo en la <strong>Universidad Científica del Sur</strong> con sólida experiencia en gestión administrativa y legal en el sector público y notarial. Experiencia en redacción de documentos jurídicos, análisis de expedientes y atención al administrado. Responsable, organizada y con facilidad de palabra. Capacidad probada para optimizar procesos administrativos (reducción de tiempos de respuesta en más de un 60%) y garantizar la seguridad jurídica.
+            </p>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- 3. EDUCACIÓN                               -->
+        <!-- ========================================== -->
+        <section class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde">
+            <h2 class="text-xl font-bold text-rosa-oscuro mb-3 border-b-2 border-rosa-borde pb-2">
+                🎓 Educación
+            </h2>
+            <div class="flex justify-between items-center bg-rosa-suave p-4 rounded-xl border border-rosa-borde">
+                <div>
+                    <h3 class="font-bold text-gray-800">Carrera de Derecho (Décimo ciclo)</h3>
+                    <p class="text-sm text-rosa-texto">Universidad Científica del Sur</p>
+                </div>
+                <span class="text-xs bg-rosa-borde text-rosa-oscuro font-bold px-3 py-1 rounded-full">
+                    En curso
+                </span>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- 4. EXPERIENCIA LABORAL                     -->
+        <!-- ========================================== -->
+        <section class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde space-y-6">
+            <h2 class="text-xl font-bold text-rosa-oscuro border-b-2 border-rosa-borde pb-2">
+                💼 Experiencia Laboral
+            </h2>
+
+            <!-- Empresa 1: Municipalidad de Chilca -->
+            <div class="space-y-1">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg text-gray-800">Municipalidad de Chilca</h3>
+                    <span class="text-xs text-rosa-principal font-semibold bg-rosa-suave px-2.5 py-1 rounded-md border border-rosa-borde">
+                        Septiembre 2026
+                    </span>
+                </div>
+                <p class="text-sm font-semibold text-rosa-texto">Servicio Especializado en Gestión de Procesos Administrativos</p>
+                <p class="text-xs text-gray-500">Subgerencia de limpieza pública, parques y jardines</p>
+            </div>
+
+            <hr class="border-rosa-borde/50">
+
+            <!-- Empresa 2: Municipalidad de San Bartolo -->
+            <div class="space-y-3">
+                <h3 class="font-bold text-lg text-gray-800">Municipalidad de San Bartolo</h3>
+                <ul class="space-y-2 text-sm pl-4 border-l-2 border-rosa-borde">
+                    <li>
+                        <span class="font-semibold text-gray-800">Elaboración y revisión de documentos administrativos</span>
+                        <span class="text-xs text-rosa-principal font-medium block sm:inline"> (Mayo 2026 – Julio 2026)</span>
+                        <p class="text-xs text-gray-500">Gerencia de Asesoría Jurídica</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold text-gray-800">Asistencia Legal Tributaria</span>
+                        <span class="text-xs text-rosa-principal font-medium block sm:inline"> (Marzo 2026)</span>
+                        <p class="text-xs text-gray-500">Gerencia de Administración Tributaria y Fiscalización</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold text-gray-800">Analista Legal en Materia Tributaria</span>
+                        <span class="text-xs text-rosa-principal font-medium block sm:inline"> (Julio 2025 – Febrero 2026)</span>
+                        <p class="text-xs text-gray-500">Subgerencia de Recaudación, Registro, Verificación y Fiscalización Tributaria</p>
+                    </li>
+                </ul>
+            </div>
+
+            <hr class="border-rosa-borde/50">
+
+            <!-- Empresa 3: Notaría Chuquiure -->
+            <div class="space-y-1">
+                <div class="flex justify-between items-start">
+                    <h3 class="font-bold text-lg text-gray-800">Notaría Chuquiure</h3>
+                    <span class="text-xs text-rosa-principal font-semibold bg-rosa-suave px-2.5 py-1 rounded-md border border-rosa-borde">
+                        Febrero 2025 – Junio 2025
+                    </span>
+                </div>
+                <p class="text-sm font-semibold text-rosa-texto">Asistente Notarial</p>
+                <p class="text-xs text-gray-500">Área de Transferencia Vehicular</p>
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- 5. LOGROS DESTACADOS                      -->
+        <!-- ========================================== -->
+        <section class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde">
+            <h2 class="text-xl font-bold text-rosa-oscuro mb-4 border-b-2 border-rosa-borde pb-2">
+                🏆 Logros Destacados
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Logros San Bartolo -->
+                <div class="bg-rosa-suave p-4 rounded-xl border border-rosa-borde">
+                    <h3 class="font-bold text-rosa-oscuro text-sm mb-2">Municipalidad de San Bartolo</h3>
+                    <ul class="text-xs sm:text-sm text-gray-700 space-y-1.5 list-disc pl-4">
+                        <li>Optimicé la atención de expedientes a <strong>10 días hábiles</strong> (estándar usual de 30 a 45 días).</li>
+                        <li>Resolví en 2 semanas la carga procesal acumulada de meses anteriores.</li>
+                        <li>Implementé un sistema de asesoría para reducir errores en formularios.</li>
+                        <li>Recibí reconocimiento formal de contribuyentes por trato amable y claridad legal.</li>
+                    </ul>
+                </div>
+
+                <!-- Logros Notaría Chuquiure -->
+                <div class="bg-rosa-suave p-4 rounded-xl border border-rosa-borde">
+                    <h3 class="font-bold text-rosa-oscuro text-sm mb-2">Notaría Chuquiure</h3>
+                    <ul class="text-xs sm:text-sm text-gray-700 space-y-1.5 list-disc pl-4">
+                        <li>Reduje el tiempo de preparación de actas de <strong>60 a 15-20 minutos</strong>.</li>
+                        <li>Identifiqué alertas preventivas sobre usuarios con antecedentes.</li>
+                        <li>Logré que el <strong>100% de las actas</strong> redactadas fueran firmadas el mismo día.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- 6. HABILIDADES E IDIOMAS                  -->
+        <!-- ========================================== -->
+        <section class="bg-rosa-tarjeta p-6 sm:p-8 rounded-2xl shadow-sm border border-rosa-borde">
+            <h2 class="text-xl font-bold text-rosa-oscuro mb-4 border-b-2 border-rosa-borde pb-2">
+                ✨ Habilidades y Competencias
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- Habilidades Legales -->
+                <div>
+                    <h3 class="font-bold text-rosa-texto text-sm mb-2">Conocimientos Legales</h3>
+                    <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+                        <li>• Redacción de actos administrativos</li>
+                        <li>• Análisis de expedientes</li>
+                        <li>• Derecho de Familia</li>
+                        <li>• Gestión Pública</li>
+                    </ul>
+                </div>
+
+                <!-- Herramientas / Sistemas -->
+                <div>
+                    <h3 class="font-bold text-rosa-texto text-sm mb-2">Sistemas y Software</h3>
+                    <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+                        <li>• Microsoft Office (Word, Excel, PPT)</li>
+                        <li>• Sistema SISMUN</li>
+                        <li>• Consultas SUNARP</li>
+                        <li>• Búsqueda legal (SPIJ)</li>
+                    </ul>
+                </div>
+
+                <!-- Habilidades Personales e Idiomas -->
+                <div>
+                    <h3 class="font-bold text-rosa-texto text-sm mb-2">Competencias e Idiomas</h3>
+                    <ul class="text-xs sm:text-sm text-gray-700 space-y-1">
+                        <li>• Adaptabilidad y trabajo en equipo</li>
+                        <li>• Pensamiento analítico y atención al detalle</li>
+                        <li>• <strong>Español:</strong> Nativo</li>
+                        <li>• <strong>Inglés:</strong> Intermedio (En curso)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- PIE DE PÁGINA                              -->
+        <!-- ========================================== -->
+        <footer class="text-center text-xs text-rosa-oscuro py-4">
+            <p>© Carmen Debora Rita Rojas Vélez — Curriculum Vitae / Perfil Profesional</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
